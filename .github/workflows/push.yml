@@ -1,5 +1,7 @@
 name: Push Code
 
+permissions: write-all
+
 on:
   push:
     branches:
