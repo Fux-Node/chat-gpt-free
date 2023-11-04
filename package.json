@@ -1,6 +1,6 @@
 {
   "name": "@fux-node/chat-gpt-free",
-  "version": "0.0.3",
+  "version": "0.0.1",
   "displayName": "Chat GPT Free",
   "description": "free chat gpt services.",
   "main": "app/index.ts",
