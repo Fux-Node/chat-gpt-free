@@ -27,6 +27,8 @@ jobs:
 
     - name: version upgrade
       run: npm version patch
+      env:
+        NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
 
     - name: push code
       run: git push origin master
