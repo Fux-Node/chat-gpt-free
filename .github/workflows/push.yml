@@ -34,8 +34,3 @@ jobs:
       run: git push origin master
       env:
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-
-    - name: Publish to NPM
-      env:
-        NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
-      run: npm publish
