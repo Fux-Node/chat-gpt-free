@@ -18,6 +18,11 @@ jobs:
       with:
         node-version: 16
 
+    - name: set username and email
+      run: |
+        git config user.name  ${{secrets.USER_NAME}}
+        git config user.email ${{secrets.USER_EMAIL}}
+
     - name: version upgrade
       run: npm version patch
 
