@@ -5,16 +5,16 @@ export default class ChatGptApp {
 
   async chats(userMessage: string, pageContext: Page) {
     try {
-        const textarea = await pageContext.$(".wpaicg-chat-shortcode-typing");
-        await textarea?.type(userMessage);
-        await textarea?.press("Enter");
-        const response = await pageContext.waitForResponse(
-          "https://chataigpt.org/wp-admin/admin-ajax.php"
-        );
-        const responseData = await response?.json();
-        return responseData
+      const textarea = await pageContext.$(".wpaicg-chat-shortcode-typing");
+      await textarea?.type(userMessage);
+      await textarea?.press("Enter");
+      const response = await pageContext.waitForResponse(
+        "https://chataigpt.org/wp-admin/admin-ajax.php"
+      );
+      const responseData = await response?.json();
+      return responseData?.data || "";
     } catch (error) {
-        throw new Error("unable to give response.")
+      throw new Error("unable to give response.");
     }
   }
 
