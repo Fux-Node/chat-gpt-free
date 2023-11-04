@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "displayName": "Chat GPT Free",
   "description": "free chat gpt services.",
-  "main": "index.js",
+  "main": "app/index.ts",
   "scripts": {
     "start": "ts-node app/index.ts",
     "postinstall": "npx playwright install"
