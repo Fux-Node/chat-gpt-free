@@ -15,6 +15,14 @@
   ],
   "author": "",
   "license": "ISC",
+  "homepage": "https://fuxnode.com/",
+  "bugs": {
+    "url": "https://github.com/Fux-Node/chat-gpt-free/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fux-Node/chat-gpt-free.git"
+  },
   "devDependencies": {
     "@types/node": "^20.8.10",
     "ts-node": "^10.9.1",
