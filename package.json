@@ -1,8 +1,8 @@
 {
-  "name": "chat-gpt-scrapper",
+  "name": "chat-gpt-free",
   "version": "0.0.1",
-  "displayName": "Chat GPT Scrapper",
-  "description": "",
+  "displayName": "Chat GPT Free",
+  "description": "free chat gpt services.",
   "main": "index.js",
   "scripts": {
     "start": "ts-node app/index.ts",
