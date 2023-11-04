@@ -1,7 +1,7 @@
 import { firefox, Browser, Page } from "playwright";
 
 export default class ChatGptApp {
-  browser: Browser | null = null;
+  private browser: Browser | null = null;
 
   async chats(userMessage: string, pageContext: Page) {
     try {
