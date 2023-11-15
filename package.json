@@ -3,8 +3,9 @@
   "version": "0.0.4",
   "displayName": "Chat GPT Free",
   "description": "free chat gpt services.",
-  "main": "app/index.ts",
+  "main": ".gpt/index.js",
   "scripts": {
+    "build": "tsc",
     "test": "ts-node app/example/index.ts",
     "postinstall": "npx playwright install"
   },
@@ -12,6 +13,11 @@
     "free",
     "ai",
     "chat-gpt"
+  ],
+  "files": [
+    ".gpt",
+    "package.json",
+    "README.md"
   ],
   "author": "",
   "license": "ISC",
